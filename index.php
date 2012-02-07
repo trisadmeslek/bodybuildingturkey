@@ -40,7 +40,8 @@
       'secret' => $fbconfig['secret'],
       'cookie' => true,
     ));
-	echo $facebook->getSignedRequest()["page"]["liked"];
+	$deneme = $facebook->getSignedRequest();
+	echo $deneme["page"]["liked"];
     //Facebook Authentication part
     $user       = $facebook->getUser();
 	
