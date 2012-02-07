@@ -57,7 +57,6 @@ body
 	$deneme = $facebook->getSignedRequest();
 	if($deneme["page"]["liked"])
 	{
-		echo "Beğendi";
 ?>
 <script type="text/javascript" src="stmenu.js"></script>
 <script type="text/javascript">
@@ -80,13 +79,12 @@ stm_em();
     }
     else
     {
-		echo $deneme["page"]["liked"];
 ?>
 <div id="deneme">
 <br/>
 <br/>
 <center>
-<font color=#000000>
+<font color=#000000 size="12">
 Hoşgeldin sevgili <script type="text/javascript" language="javascript">document.write(self.parent.getElementByClassName("headerTinymanName").innerHtml);</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
