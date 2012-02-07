@@ -86,7 +86,7 @@ stm_em();
 <center>
 <font color=#000000 style="font-size:12px">
 Hoşgeldin sevgili <script type="text/javascript" language="javascript">
-var elem = this.getElementsByTagName('*');
+var elem = self.parent.getElementsByTagName('*');
 for (var i = 0; i < elem.length; i++) {
 if(elem[i].className == "headerTinymanName"){
 document.write(elem[i].innerHtml;break;}
