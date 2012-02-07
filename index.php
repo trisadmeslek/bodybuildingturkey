@@ -81,16 +81,23 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<br/>
-<br/>
 <center>
 <font color=#000000 style="font-size:12px">
 Hoşgeldin sevgili <script type="text/javascript" language="javascript">
-var elem = self.parent.getElementsByTagName('*');
+parent.getElementsByClassName = function(cl) {
+var retnode = [];
+var myclass = new RegExp('\\b'+cl+'\\b');
+var elem = this.getElementsByTagName('*');
 for (var i = 0; i < elem.length; i++) {
-if(elem[i].className == "headerTinymanName"){
-document.write(elem[i].innerHtml;break;}
-}</script>
+var classes = elem[i].className;
+if (myclass.test(classes)) retnode.push(elem[i]);
+}
+return retnode;
+};
+
+document.write(parent.getElementsByClassName("headerTinymanName").innerHtml);
+
+</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
 <div>
