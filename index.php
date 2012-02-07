@@ -84,7 +84,7 @@ stm_em();
 <br/>
 <br/>
 <center>
-<font color=#000000 size="12">
+<font color=#000000 style="font-size:12px">
 Hoşgeldin sevgili <script type="text/javascript" language="javascript">document.write(self.parent.getElementByClassName("headerTinymanName").innerHtml);</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
