@@ -43,6 +43,7 @@
 
     //Facebook Authentication part
     $user       = $facebook->getUser();
+	print_r($user);
     // We may or may not have this data based 
     // on whether the user is logged in.
     // If we have a $user id here, it means we know 
@@ -55,32 +56,31 @@
                 'scope'         => 'user_likes'
             )
     );
-
-    if ($user) {
-      try {
-        // Proceed knowing you have a logged in user who's authenticated.
-        $user_profile = $facebook->api('/me');
-		print_r($user_profile);
-      } catch (FacebookApiException $e) {
-        //you should use error_log($e); instead of printing the info on browser
-        d($e);  // d is a debug function defined at the end of this file
-        $user = null;
-      }
-    }
-
-  
-    //get user basic description
-    $userInfo           = $facebook->api("/$user");
-	echo "<br><br><br><br><br><br><br><br><br>";
-	print_r($userInfo);
-    function d($d){
-        echo '<pre>';
-        print_r($d);
-        echo '</pre>';
-    }  
-	if (!$user) {
-        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
-        exit;
-    }
-    
+	print_r($user);
+   // if ($user) {
+//      try {
+//        // Proceed knowing you have a logged in user who's authenticated.
+//        $user_profile = $facebook->api('/me');
+//		print_r($user_profile);
+//      } catch (FacebookApiException $e) {
+//        //you should use error_log($e); instead of printing the info on browser
+//        d($e);  // d is a debug function defined at the end of this file
+//        $user = null;
+//      }
+//    }
+//
+//    if (!$user) {
+//        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
+//        exit;
+//    }
+//    
+//    //get user basic description
+//    $userInfo           = $facebook->api("/$user");
+//	echo "<br><br><br><br><br><br><br><br><br>";
+//	print_r($userInfo);
+//    function d($d){
+//        echo '<pre>';
+//        print_r($d);
+//        echo '</pre>';
+//    }
 ?>
