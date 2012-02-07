@@ -57,6 +57,7 @@ body
 	$deneme = $facebook->getSignedRequest();
 	if($deneme["page"]["liked"])
 	{
+		echo "Beğendi";
 ?>
 <script type="text/javascript" src="stmenu.js"></script>
 <script type="text/javascript">
@@ -79,6 +80,7 @@ stm_em();
     }
     else
     {
+		echo "Beğenmedi";
 ?>
 <div id="deneme">
 <br/>
