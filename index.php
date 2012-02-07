@@ -68,11 +68,7 @@
       }
     }
 
-    if (!$user) {
-        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
-        exit;
-    }
-    
+  
     //get user basic description
     $userInfo           = $facebook->api("/$user");
 	echo "<br><br><br><br><br><br><br><br><br>";
@@ -81,5 +77,10 @@
         echo '<pre>';
         print_r($d);
         echo '</pre>';
+    }  
+	if (!$user) {
+        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
+        exit;
     }
+    
 ?>
