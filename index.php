@@ -85,7 +85,12 @@ stm_em();
 <br/>
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldin sevgili <script type="text/javascript" language="javascript">document.write(self.parent.getElementByClassName("headerTinymanName").innerHtml);</script>
+Hoşgeldin sevgili <script type="text/javascript" language="javascript">
+var elem = this.getElementsByTagName('*');
+for (var i = 0; i < elem.length; i++) {
+if(elem[i].className == "headerTinymanName")
+document.write(elem[i].innerHtml;
+}</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
 <div>
