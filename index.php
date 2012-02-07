@@ -1,10 +1,10 @@
 <?php
     //facebook application configuration -mahmud
-    $fbconfig['appid' ] = "";
-    $fbconfig['secret'] = "";
+    $fbconfig['appid' ] = "342994075723691";
+    $fbconfig['secret'] = "fe29febdf7bc6460cb23261050c2a2a8";
 
-    $fbconfig['baseUrl']    =   "";// "http://thinkdiff.net/demo/newfbconnect1/iframe/sdk3";
-    $fbconfig['appBaseUrl'] =   "";// "http://apps.facebook.com/thinkdiffdemo";
+    $fbconfig['baseUrl']    =   "http://bodybuildingturkey.herokuapp.com";// "http://thinkdiff.net/demo/newfbconnect1/iframe/sdk3";
+    $fbconfig['appBaseUrl'] =   "http://apps.facebook.com/bodybuildingturkey";// "http://apps.facebook.com/thinkdiffdemo";
 
     
     /* 
