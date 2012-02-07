@@ -53,7 +53,7 @@
     // the user is logged into
     // Facebook, but we don't know if the access token is valid. An access
     // token is invalid if the user logged out of Facebook.
-    echo "giriş adresini alma <br>";
+    echo "giriş adresini alma : <br>";
     $loginUrl   = $facebook->getLoginUrl(
             array(
                 'scope'         => 'user_likes'
@@ -78,7 +78,7 @@
 //    }
     
     //get user basic description
-    echo "kullanıcı değişkeniyle kullanıcı bilgileri";
+    echo "kullanıcı değişkeniyle kullanıcı bilgileri :". $user;
     $userInfo           = $facebook->api("/$user");
 	echo "<br><br><br><br><br><br><br><br><br>";
 	print_r($userInfo);
