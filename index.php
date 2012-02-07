@@ -1,3 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body 
+{
+	background-image:url('karsilama.png');
+	background-repeat:no-repeat;
+}
+</style>
+</head>
+<body>
 <?php
     //facebook application configuration -mahmud
     $fbconfig['appid' ] = "342994075723691";
@@ -41,46 +55,44 @@
       'cookie' => true,
     ));
 	$deneme = $facebook->getSignedRequest();
-	echo $deneme["page"]["liked"];
-    //Facebook Authentication part
-    $user       = $facebook->getUser();
-	
-    // We may or may not have this data based 
-    // on whether the user is logged in.
-    // If we have a $user id here, it means we know 
-    // the user is logged into
-    // Facebook, but we don't know if the access token is valid. An access
-    // token is invalid if the user logged out of Facebook.
-    $loginUrl   = $facebook->getLoginUrl(
-            array(
-                'scope'         => 'user_likes'
-            )
-    );
-	
-    if ($user) {
-      try {
-        // Proceed knowing you have a logged in user who's authenticated.
-        $user_profile = $facebook->api('/me');
-		print_r($user_profile);
-      } catch (FacebookApiException $e) {
-        //you should use error_log($e); instead of printing the info on browser
-        d($e);  // d is a debug function defined at the end of this file
-        $user = null;
-      }
+	if($deneme["page"]["liked"])
+	{
+?>
+<script type="text/javascript" src="stmenu.js"></script>
+<script type="text/javascript">
+<!--
+stm_bm(["menu1d08",950,"","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","",0,0,1,2,"default","hand","",1,25],this);
+stm_bp("p0",[0,4,0,0,2,3,0,0,100,"",-2,"",-2,50,0,0,"#999999","transparent","",3,0,0,"#000000"]);
+stm_ai("p0i0",[0,"Duvara Git","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/Bodybuilding.Turkey?sk=wall\'","_self","","Duvara gitmek için tıklayınız ...","","",0,0,0,"","",0,0,0,1,1,"#FFFFF7",1,"#B5BED6",1,"round02_m.gif","round2a_m.gif",3,3,0,0,"#FFFFF7","#000000","#FFFFFF","#66FFFF","8pt 'Arial','Verdana'","8pt 'Arial','Verdana'",0,0,"round2_l.gif","round2a_l.gif","round02_r.gif","round2a_r.gif",5,5,21],125,0);
+stm_aix("p0i1","p0i0",[0,"Resimler","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/media/albums/?id=243995755679940\'","_self","","Albümlere gitmek için tıklayınız ..."],125,0);
+stm_bpx("p1","p0",[1,4]);
+stm_aix("p1i0","p0i1",[0,"Albümler"],125,0);
+stm_aix("p1i1","p0i0",[0,"Profil Resimleri","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/media/set/?set=a.243995949013254.60370.243995755679940&type=3\'","_self","","Profil resimlerine gitmek için tıklayınız ..."],125,0);
+stm_ep();
+stm_aix("p0i2","p0i0",[0,"Videolar","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/video/?id=243995755679940\'","_self","","Videolar sayfasına gitmek için tıklayınız ..."],125,0);
+stm_aix("p0i3","p0i0",[0,"Bilgiler","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/Bodybuilding.Turkey?sk=info\'","_self","","Profil bilgileri sayfasına gitmek için tıklayınız ..."],125,0);
+stm_ep();
+stm_em();
+//-->
+</script>
+<?php
     }
+    else
+    {
+?>
+<div id="deneme">
+<br/>
+<br/>
+<center>
+<font color=#000000>
+Hoşgeldin sevgili <script type="text/javascript" language="javascript">self.parent.getElementByClassName("headerTinymanName").innerHtml;</script>
+Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
+</center>
+<div>
 
-   // if (!$user) {
-//        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
-//        exit;
-//    }
-    
-    //get user basic description
-    $userInfo           = $facebook->api("/erayaydin");
-	echo "<br><br><br><br><br><br><br><br><br>";
-	print_r($userInfo);
-    function d($d){
-        echo '<pre>';
-        print_r($d);
-        echo '</pre>';
+<?php
     }
 ?>
+
+</body>
+</html>
