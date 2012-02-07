@@ -81,6 +81,7 @@ stm_em();
     {
 ?>
 <div id="deneme">
+<br />
 <center>
 <font color=#000000 style="font-size:14px">
 Hoşgeldiniz <fb:userlink uid="loggedinuser" />, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
