@@ -85,7 +85,7 @@ stm_em();
 <br/>
 <center>
 <font color=#000000>
-Hoşgeldin sevgili <script type="text/javascript" language="javascript">self.parent.getElementByClassName("headerTinymanName").innerHtml;</script>
+Hoşgeldin sevgili <script type="text/javascript" language="javascript">document.write(self.parent.getElementByClassName("headerTinymanName").innerHtml);</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
 <div>
