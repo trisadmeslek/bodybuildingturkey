@@ -80,7 +80,7 @@ stm_em();
     }
     else
     {
-		echo "Beğenmedi";
+		echo $deneme["page"]["liked"];
 ?>
 <div id="deneme">
 <br/>
