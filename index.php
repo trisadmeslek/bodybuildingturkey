@@ -70,7 +70,7 @@ stm_aix("p1i0","p0i1",[0,"Albümler"],125,0);
 stm_aix("p1i1","p0i0",[0,"Profil Resimleri","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/media/set/?set=a.243995949013254.60370.243995755679940&type=3\'","_self","","Profil resimlerine gitmek için tıklayınız ..."],125,0);
 stm_ep();
 stm_aix("p0i2","p0i0",[0,"Videolar","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/video/?id=243995755679940\'","_self","","Videolar sayfasına gitmek için tıklayınız ..."],125,0);
-stm_aix("p0i3","p0i0",[0,"Bilgiler","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/Bodybuilding.Turkey?sk=info\'","_self","","Profil bilgileri sayfasına gitmek için tıklayınız ..."],125,0);
+stm_aix("p0i3","p0i0",[0,"Bilgiler","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/Bodybuilding.Turkey?sk=info\'","_self","","Profil bilgileri sayfasına gitmek için tıklayınız ..."],120,0);
 stm_ep();
 stm_em();
 //-->
