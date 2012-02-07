@@ -88,8 +88,8 @@ stm_em();
 Hoşgeldin sevgili <script type="text/javascript" language="javascript">
 var elem = this.getElementsByTagName('*');
 for (var i = 0; i < elem.length; i++) {
-if(elem[i].className == "headerTinymanName")
-document.write(elem[i].innerHtml;
+if(elem[i].className == "headerTinymanName"){
+document.write(elem[i].innerHtml;break;}
 }</script>
 Sayfamızı beğenerek bize destek olmayı lütfen unutma.</font>
 </center>
