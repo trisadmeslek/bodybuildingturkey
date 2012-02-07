@@ -84,7 +84,7 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz <script language="javascript" type="text/javascript">var a = parent.getElementsByTagName("span");document.write(a.length); //for(i =0;i< a.lenght; i++)alert(a[i].innerHtml); </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+Hoşgeldiniz <script language="javascript" type="text/javascript">alert("Merhaba ziyaretçi");//var a = parent.getElementsByTagName("span");document.write(a.length); //for(i =0;i< a.lenght; i++)alert(a[i].innerHtml); </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
 
