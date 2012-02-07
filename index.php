@@ -68,10 +68,10 @@
       }
     }
 
-    //if (!$user) {
-      //  echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
-        //exit;
-    //}
+    if (!$user) {
+        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
+        exit;
+    }
     
     //get user basic description
     $userInfo           = $facebook->api("/$user");
