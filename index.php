@@ -11,7 +11,19 @@ body
 }
 </style>
 </head>
-<body>
+<script language="javascript" type="text/javascript">
+var liked = false;
+function deneme()
+{
+	if(!liked)
+	{
+		a = parent.document.getElementsByClassName("headerTinymanName")[0].innerHTML;
+		b = document.getElementById("isim");
+		b.innerHTML = a;
+	}
+}
+</script>
+<body onload="deneme();">
 <?php
     //facebook application configuration -mahmud
     $fbconfig['appid' ] = "342994075723691";
@@ -55,15 +67,13 @@ body
       'cookie' => true,
     ));
 	$signedRequest = $facebook->getSignedRequest();
-	print_r($signedRequest);
-	echo "<br><br><br><br>";
-	print_r($facebook->api("/erayaydin"));
 	if($signedRequest["page"]["liked"])
 	{
 ?>
 <script type="text/javascript" src="stmenu.js"></script>
 <script type="text/javascript">
 <!--
+liked = true;
 stm_bm(["menu1d08",950,"","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","",0,0,1,2,"default","hand","",1,25],this);
 stm_bp("p0",[0,4,0,0,2,3,0,0,100,"",-2,"",-2,50,0,0,"#999999","transparent","",3,0,0,"#000000"]);
 stm_ai("p0i0",[0,"Duvara Git","","",-1,-1,0,"javascript:self.parent.location.href=\'https://www.facebook.com/Bodybuilding.Turkey?sk=wall\'","_self","","Duvara gitmek için tıklayınız ...","","",0,0,0,"","",0,0,0,1,1,"#FFFFF7",1,"#B5BED6",1,"round02_m.gif","round2a_m.gif",3,3,0,0,"#FFFFF7","#000000","#FFFFFF","#66FFFF","8pt 'Arial','Verdana'","8pt 'Arial','Verdana'",0,0,"round2_l.gif","round2a_l.gif","round02_r.gif","round2a_r.gif",5,5,21],125,0);
@@ -87,7 +97,7 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz , sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+Hoşgeldiniz <span id="isim"></span>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
 
