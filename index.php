@@ -86,7 +86,7 @@ stm_em();
 <font color=#000000 style="font-size:12px">
 Hoşgeldiniz 
 <script language="javascript"  type="text/javascript">
-alert(parent.getElementsByClassName("headerTinymanName")[0].innerHTML);
+alert(parent.toString());
 </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
