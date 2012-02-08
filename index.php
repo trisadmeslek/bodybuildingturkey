@@ -55,6 +55,7 @@ body
       'cookie' => true,
     ));
 	$deneme = $facebook->getSignedRequest();
+	print_r($deneme);
 	if($deneme["page"]["liked"])
 	{
 ?>
