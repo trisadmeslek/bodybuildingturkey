@@ -84,29 +84,10 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '342994075723691', // App ID
-      channelUrl : '//https://bodybuildingturkey.herokuapp.com/index.php', // Channel File
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
-      xfbml      : true  // parse XFBML
-    });
-
-    // Additional initialization code here
-  };
-
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     d.getElementsByTagName('head')[0].appendChild(js);
-   }(document));
-   FB.api('/me', function(response) {
-  alert('Your name is ' + response.name);
-});
+Hoşgeldiniz 
+<script language="javascript"  type="text/javascript">
+parent.getElementByClassName = self.getElementsByClassName;
+alert(parent.getElementByClassName("headerTinymanName").innetHtml);
 </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
