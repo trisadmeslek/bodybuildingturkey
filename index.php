@@ -81,7 +81,7 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<font color=#000000 style="font-size:14px;left-margin:200px;top-margin:75px;">
+<font color=#000000 style="font-size:14px;left-margin:400px;top-margin:200px;">
 Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.
 </font>
 </div>
