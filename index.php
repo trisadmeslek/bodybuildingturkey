@@ -55,7 +55,6 @@ body
       'cookie' => true,
     ));
 	$signedRequest = $facebook->getSignedRequest();
-	print_r($signedRequest);
 	if($signedRequest["page"]["liked"])
 	{
 ?>
@@ -82,8 +81,9 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<font color=#000000 style="font-size:12px;left-margin:10px;top-margin:20px;">
-Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+<font color=#000000 style="font-size:10px;left-margin:20px;top-margin:30px;">
+Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.
+</font>
 </div>
 
 <?php
