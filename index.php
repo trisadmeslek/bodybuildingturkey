@@ -84,7 +84,7 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz <script language="javascript" type="text/javascript">var a = parent.getElementsByTagName("span"); alert("Merhaba dinye" + a.length.toString());</script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+Hoşgeldiniz <script language="javascript" type="text/javascript">var a = parent.getElementsByTagName("span"); alert("Merhaba dinye");</script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
 
