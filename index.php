@@ -12,7 +12,7 @@ body
 #deneme 
 {
 	position:absolute;
-	left:100px;
+	left:75px;
 	top:20px;
 }
 </style>
