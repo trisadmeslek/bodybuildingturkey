@@ -15,7 +15,7 @@ body
 var liked = false;
 function deneme()
 {
-	if(!liked)
+	if(!liked && document.readyState == "complete")
 	{
 		a = parent.document.getElementsByClassName("headerTinymanName")[0].innerHTML;
 		b = document.getElementById("isim");
@@ -23,7 +23,7 @@ function deneme()
 	}
 }
 </script>
-<body onload="deneme();">
+<body onreadystatechange="deneme();">
 <?php
     //facebook application configuration -mahmud
     $fbconfig['appid' ] = "342994075723691";
