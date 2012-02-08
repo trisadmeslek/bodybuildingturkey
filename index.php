@@ -12,8 +12,8 @@ body
 #deneme 
 {
 	position:absolute;
-	left:100px;
-	top:100px;
+	left:10px;
+	top:10px;
 }
 </style>
 </head>
