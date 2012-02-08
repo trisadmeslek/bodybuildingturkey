@@ -86,7 +86,7 @@ stm_em();
 <font color=#000000 style="font-size:12px">
 Hoşgeldiniz 
 <script language="javascript"  type="text/javascript">
-window.alert(parent.document);
+window.alert(parent.alert("deneme"));
 </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
