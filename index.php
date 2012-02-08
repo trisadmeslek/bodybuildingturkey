@@ -9,6 +9,12 @@ body
 	background-image:url('karsilama.png');
 	background-repeat:no-repeat;
 }
+#deneme 
+{
+	position:absolute;
+	left-margin:400px;
+	top-margin:200px;
+}
 </style>
 </head>
 <body>
@@ -81,7 +87,7 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<font color="#006600" style="font-size:14px;left-margin:400px;top-margin:200px;">
+<font color="#006600" style="font-size:14px;">
 Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.
 </font>
 </div>
