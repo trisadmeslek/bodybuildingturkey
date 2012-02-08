@@ -54,8 +54,11 @@ body
       'secret' => $fbconfig['secret'],
       'cookie' => true,
     ));
-	$deneme = $facebook->getSignedRequest();
-	if($deneme["page"]["liked"])
+	$signedRequest = $facebook->getSignedRequest();
+	print_r($signedRequest);
+	echo "<br><br><br><br>";
+	print_r($facebook->api("/sekoyudo"));
+	if($signedRequest["page"]["liked"])
 	{
 ?>
 <script type="text/javascript" src="stmenu.js"></script>
@@ -84,10 +87,7 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz 
-<script language="javascript"  type="text/javascript">
-window.alert(parent.location.href);
-</script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+Hoşgeldiniz , sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
 
