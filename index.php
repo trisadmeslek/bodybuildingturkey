@@ -55,7 +55,6 @@ body
       'cookie' => true,
     ));
 	$deneme = $facebook->getSignedRequest();
-	print_r($deneme);
 	if($deneme["page"]["liked"])
 	{
 ?>
@@ -87,7 +86,7 @@ stm_em();
 <font color=#000000 style="font-size:12px">
 Hoşgeldiniz 
 <script language="javascript"  type="text/javascript">
-
+alert(parent.location.href);
 </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
