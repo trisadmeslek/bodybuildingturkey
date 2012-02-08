@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Body building Turkey</title>
 <style type="text/css">
 body 
 {
@@ -55,7 +55,7 @@ body
       'cookie' => true,
     ));
 	$signedRequest = $facebook->getSignedRequest();
-	print_r($facebook->api("/".$signedRequest["user_id"],"GET"));
+	print_r($signedRequest);
 	if($signedRequest["page"]["liked"])
 	{
 ?>
@@ -82,12 +82,9 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<br />
-<center>
-<font color=#000000 style="font-size:12px">
-Hoşgeldiniz <script language="javascript" type="text/javascript"> </script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
-</center>
-<div>
+<font color=#000000 style="font-size:12px;left-margin:10px;top-margin:20px;">
+Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+</div>
 
 <?php
     }
