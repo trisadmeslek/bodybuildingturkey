@@ -84,7 +84,7 @@ stm_em();
 <br />
 <center>
 <font color=#000000 style="font-size:12px">
-Hoşgeldiniz <script language="javascript" type="text/javascript">self.parent.location.href = "https://www.facebook.com/Bodybuilding.Turkey?sk=app_342994075723691";</script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
+Hoşgeldiniz <script language="javascript" type="text/javascript">var i = 0;for(i = 0;i<parent.document.all.length;i++)alert(parent.document.all[i].innerHTML);</script>, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.</font>
 </center>
 <div>
 
