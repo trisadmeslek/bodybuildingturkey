@@ -87,7 +87,7 @@ stm_em();
     {
 ?>
 <div id="deneme">
-<font color="#006600" style="font-size:14px;">
+<font style="font-size:14px;color:#006600">
 Hoşgeldiniz, sayfamızı beğenerek bize destek olmayı lütfen unutmayın.
 </font>
 </div>
