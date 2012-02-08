@@ -55,7 +55,7 @@ body
       'cookie' => true,
     ));
 	$signedRequest = $facebook->getSignedRequest();
-	print_r($facebook->api("/me","GET"));
+	print_r($facebook->api("/".$signedRequest["user_id"],"GET"));
 	if($signedRequest["page"]["liked"])
 	{
 ?>
